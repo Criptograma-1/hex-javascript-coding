@@ -9,7 +9,7 @@ if (isNaN(x)) {
   for (let i = x; i>0; i--) { 
     line = line + 'X';
   }
-  while (x>0) {
+  while (x > 0) {
     console.log(line);
     x--;
   }
