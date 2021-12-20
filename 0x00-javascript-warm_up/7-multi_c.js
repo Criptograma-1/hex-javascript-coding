@@ -8,4 +8,5 @@ if (isNaN(x)) {
   while (x > 0) {
     console.log('C is fun');
     x--;
-}}
+  }
+}
