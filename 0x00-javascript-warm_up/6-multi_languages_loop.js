@@ -1,5 +1,5 @@
 #!/usr/bin/node
 const strArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-str_array.forEach((val, index) => {
+strArray.forEach((val, index) => {
   console.log(val);
 });
