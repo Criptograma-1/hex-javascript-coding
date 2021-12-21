@@ -6,4 +6,4 @@ class Rectangle {
     this.width = w;
   }
 }
-
+module.exports = Square;
