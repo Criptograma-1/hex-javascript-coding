@@ -13,7 +13,7 @@ const printCharacters = (characters, i) => {
   request(characters[i], (err, response, body) => {
     if (err) console.log(err);
     console.log(JSON.parse(body).name);
-    if (i +1 < characters.length) {
+    if (i + 1 < characters.length) {
       printCharacters(characters, i + 1);
     }
   });
