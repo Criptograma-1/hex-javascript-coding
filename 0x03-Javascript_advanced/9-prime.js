@@ -1,12 +1,13 @@
   function countPrimeNumbers() {
-    let count = 4;
-    for (let i = 2; i <= 100; i++) {
-      if(i % 2 == 0 && i % 3 == 0 && 
-         i % 5 == 0 && i % 7 == 0)count=count;
-      else { count++; }
-    } 
-    return count;
+    let primes = 0
+  for (let counter = 2; counter <= 100; counter++)
+  {
+      if(counter % 2 == 0 || counter % 3 == 0 || counter % 5 == 0 || counter % 7 == 0)isPrime=0; 
+      else {
+          primes++;
+      }
   }
+}
 
 let t0 = performance.now();
 countPrimeNumbers();

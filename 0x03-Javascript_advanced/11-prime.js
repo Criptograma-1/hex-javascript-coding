@@ -1,16 +1,24 @@
-function countPrimeNumbers() {
-  let count = 4;
-  for (let i = 2; i <= 100; i++) {
-    if(i % 2 == 0 && i % 3 == 0 && 
-       i % 5 == 0 && i % 7 == 0)count=count;
-    else { count++; }
-  } 
-  return count;
+function countPrimeNumbers(){
+  let primes=4; 
+  for (let counter = 2; counter <= 100; counter++)
+  {
+      let isPrime = 0;
+
+      if(counter % 2 == 0 || counter % 3 == 0 || counter % 5 == 0 || counter % 7 == 0)isPrime=0; 
+      else {
+          primes++;
+      }
+  }
+
+
+  return primes
 }
 
-let t0 = performance.now();
-for (let i = 0; i < 100; i++) {
-  countPrimeNumbers();
-}
-let t1 = performance.now();
+const t0 = window.performance.now()
+setTimeout(function() {
+  for (let i = 0; i < 100; i++) {
+      countPrimeNumbers();
+  }
+}, 0);
+const t1 = window.performance.now();
 console.log(`Execution time of calculating prime numbers 100 times was ${t1-t0} milliseconds.`);
