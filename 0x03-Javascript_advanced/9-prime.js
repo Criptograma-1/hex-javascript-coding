@@ -1,8 +1,12 @@
-function countPrimeNumbers() {
-  for (let i = 2; i <= 100; i++) {
-    if(i % i != 0) count++;
+  function countPrimeNumbers() {
+    let count = 4;
+    for (let i = 2; i <= 100; i++) {
+      if(i % 2 == 0 && i % 3 == 0 && 
+         i % 5 == 0 && i % 7 == 0)count=count;
+      else { count++; }
+    } 
+    return count;
   }
-}
 
 let t0 = performance.now();
 countPrimeNumbers();
