@@ -1,0 +1,79 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "fd",
+      "author": "fffff",
+      "id": 2
+    },
+    {
+      "title": "fd",
+      "author": "fffff",
+      "id": 3
+    },
+    {
+      "title": "f",
+      "author": "f",
+      "id": 4
+    },
+    {
+      "title": "ad",
+      "author": "ss",
+      "id": 5
+    },
+    {
+      "title": "zss",
+      "author": "zsdzd",
+      "id": 6
+    },
+    {
+      "title": "sdzs",
+      "author": "dfdf",
+      "id": 7
+    },
+    {
+      "title": "ertr",
+      "author": "fgfcg",
+      "id": 8
+    },
+    {
+      "title": "ser",
+      "author": "fgc",
+      "id": 9
+    },
+    {
+      "title": "rtrt",
+      "author": "zdzd",
+      "id": 10
+    },
+    {
+      "author": "Andresa",
+      "title": "Andresa",
+      "id": 11
+    },
+    {
+      "author": "Andresa",
+      "title": "ola",
+      "id": 12
+    },
+    {
+      "author": "Andresa",
+      "title": "oiiii",
+      "id": 13
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
