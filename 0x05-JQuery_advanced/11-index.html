@@ -57,19 +57,26 @@
 
       function sendForm() {
         $('form').after('<p>About to send the query to the API</p>');
-        author = $('#author').val();
-        title = $('#title').val();
+        var data = {
+        author : $('#author').val(),
+        title : $('#title').val()
+        };
 
         $.ajax({
           url: api,
           type: 'POST',
           headers: {'content-type':'application/json'},
-          data: JSON.stringify({author, title}),
+          data: JSON.stringify(data),
           sucess: (response) => {
             addPostRow(response);
             $('#author').val('');
             $('#title').val('');
           },
+          error: (err) => {
+            alert('Error sending the POST query');
+            $('#author').val('');
+            $('#title').val('');
+          }
         });
       }
       listPost();
