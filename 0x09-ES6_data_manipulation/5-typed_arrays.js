@@ -10,3 +10,5 @@ function createInt8TypedArray(length, position, value) {
 
   return dataview;
 }
+
+export default createInt8TypedArray;
