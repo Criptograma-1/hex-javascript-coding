@@ -4,7 +4,7 @@ const countStudents = require('./3-read_file_async');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello Holberton School!')
+  res.send('Hello Holberton School!');
 });
 
 app.get('/students', (req, res) => {
@@ -23,11 +23,11 @@ app.get('/students', (req, res) => {
     res.setHeader('Content-Length', responseText.length);
     res.statusCode = 200;
     res.write(Buffer.from(responseText));
-  })
-})
+  });
+});
 
 app.listen(1245, () => {
-  console.log(`Server running`)
+  console.log('Server running');
 });
 
 module.exports = app;

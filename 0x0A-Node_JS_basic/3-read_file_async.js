@@ -2,19 +2,19 @@ const fs = require('fs/promises');
 
 async function countStudents(path) {
   try {
-    const lines = await (await fs.readFile(path, {encoding: 'utf8'})).split(/\r?\n/);
+    const lines = await (await fs.readFile(path, { encoding: 'utf8' })).split(/\r?\n/);
     lines.shift();
     let countStudents = 0;
     const printAux = {};
-    for (line of lines) {     
-      if (line !== ''){
+    for (const line of lines) {
+      if (line !== '') {
         countStudents += 1;
-        const [firstName, lastName, age, field] = line.split(',');
-        if(!printAux[field]) {
+        const [firstName, lastName, age, field] = line.split(','); // eslint-disable-line
+        if (!printAux[field]) {
           printAux[field] = {
             students: 1,
             studentsNames: [firstName],
-          }
+          };
         } else {
           const newCount = printAux[field].students + 1;
           const newStudents = (printAux[field].studentsNames).concat(firstName);
