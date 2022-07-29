@@ -11,8 +11,8 @@ interface Directors extends Teacher {
   numberOfReports: number;
 }
 
-function printTeacher(firstName: string, lastName:string) {
-  return `${firstName.slice(0,1)}. ${lastName}`;
+const printTeacher: printTeacherFunction = (firstName: string, lastName:string) => {
+  return `${firstName[0]}. ${lastName}`;
 }
 
 interface printTeacherFunction {
