@@ -22,6 +22,32 @@ const printTeacher: printTeacherFunction = (
   return `${firstName[0]}. ${lastName}`;
 };
 
-console.log(printTeacher('John', 'Doe'));
+interface Student {
+  firstName: string;
+  lastName: string;
+}
+
+interface StudentClass extends Student {
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+class StudentClass implements StudentClass {
+  firstName: string;
+  lastName: string;
+
+  constructor ({firstName, lastName}: Student) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): string {
+      return 'Currently working';
+  }
+
+  displayName(): string {
+      return this.firstName;
+  }
+}
 
 
