@@ -24,13 +24,13 @@ class Director implements DirectorInterface {
 
 class Teacher implements TeacherInterface {
   workFromHome(): string {
-      return 'Working from home';
+      return 'Cannot work from home';
   }
   getCoffeeBreak(): string {
-      return "Getting a coffee break"
+      return "Cannot have a break"
   }
   workTeacherTasks(): string {
-      return "Getting to director tasks"
+      return "Getting to work"
   }
 }
 
@@ -44,5 +44,7 @@ function createEmployee(salary: number | string): Director | Teacher {
 export {
   createEmployee,
   Director,
-  Teacher
+  Teacher,
+  TeacherInterface,
+  DirectorInterface
 }
