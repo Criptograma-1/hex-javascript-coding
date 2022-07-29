@@ -41,10 +41,24 @@ function createEmployee(salary: number | string): Director | Teacher {
   return new Director();
 }
 
+function isDirector(employee: DirectorInterface | TeacherInterface): boolean {
+  return employee instanceof Director;
+}
+
+function executeWork(employee: DirectorInterface | TeacherInterface) {
+  if (employee instanceof Director) {
+    employee.workDirectorTasks()
+  } else if (employee instanceof Teacher) {
+    return employee.workTeacherTasks();
+  }
+}
+
 export {
   createEmployee,
   Director,
   Teacher,
   TeacherInterface,
-  DirectorInterface
+  DirectorInterface,
+  isDirector,
+  executeWork
 }
