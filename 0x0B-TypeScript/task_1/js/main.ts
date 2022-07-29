@@ -22,12 +22,9 @@ const printTeacher: printTeacherFunction = (
   return `${firstName[0]}. ${lastName}`;
 };
 
-interface Student {
-  firstName: string;
-  lastName: string;
-}
 
-interface StudentClass extends Student {
+interface StudentClassInterface {
+  constructor(firstName: string, lastName:string): void;
   workOnHomework(): string;
   displayName(): string;
 }
@@ -36,7 +33,7 @@ class StudentClass implements StudentClass {
   firstName: string;
   lastName: string;
 
-  constructor ({firstName, lastName}: Student) {
+  constructor (firstName: string, lastName: string) {
     this.firstName = firstName;
     this.lastName = lastName;
   }
