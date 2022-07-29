@@ -1,10 +1,10 @@
-const cpp: Subjects.Cpp = new Subjects.Cpp();
-const java: Subjects.Java = new Subjects.Java();
-const react: Subjects.React = new Subjects.React();
+export const cpp: Subjects.Cpp = new Subjects.Cpp();
+export const java: Subjects.Java = new Subjects.Java();
+export const react: Subjects.React = new Subjects.React();
 
-let cTeacher = {
-	firstName: 'Um',
-	lastName: 'Professor',
+export const cTeacher: Subjects.TeacherInterface = {
+	firstName: 'Pablo',
+	lastName: 'Escobar',
 	experienceTeachingC: 10,
 };
 
@@ -22,10 +22,3 @@ console.log('React');
 react.setTeacher = cTeacher;
 console.log(react.getRequirements());
 console.log(react.getAvailableTeacher());
-
-export {
-	cpp,
-	java,
-	react,
-	cTeacher,
-}
