@@ -42,6 +42,7 @@ function createEmployee(salary: number | string): Director | Teacher {
 }
 
 export {
-  createEmployee
+  createEmployee,
+  Director,
+  Teacher
 }
-console.log(createEmployee(200));
