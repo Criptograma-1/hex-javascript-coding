@@ -15,10 +15,10 @@ class Director implements DirectorInterface {
       return 'Working from home';
   }
   getCoffeeBreak(): string {
-      return "Getting a coffee break"
+      return "Getting a coffee break";
   }
   workDirectorTasks(): string {
-      return "Getting to director tasks"
+      return "Getting to director tasks";
   }
 }
 
@@ -27,10 +27,10 @@ class Teacher implements TeacherInterface {
       return 'Cannot work from home';
   }
   getCoffeeBreak(): string {
-      return "Cannot have a break"
+      return "Cannot have a break";
   }
   workTeacherTasks(): string {
-      return "Getting to work"
+      return "Getting to work";
   }
 }
 
@@ -45,11 +45,24 @@ function isDirector(employee: DirectorInterface | TeacherInterface): boolean {
   return employee instanceof Director;
 }
 
-function executeWork(employee: DirectorInterface | TeacherInterface) {
+function executeWork(employee: DirectorInterface | TeacherInterface): string {
   if (employee instanceof Director) {
-    employee.workDirectorTasks()
+    return employee.workDirectorTasks();
   } else if (employee instanceof Teacher) {
     return employee.workTeacherTasks();
+  }
+}
+
+const teste = createEmployee(900);
+console.log(executeWork(teste))
+
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): String {
+  if(todayClass === 'Math') {
+    return 'Teaching Math';
+  } else if (todayClass === 'History') {
+    return 'Teaching History'
   }
 }
 
@@ -60,5 +73,6 @@ export {
   TeacherInterface,
   DirectorInterface,
   isDirector,
-  executeWork
+  executeWork,
+  teachClass
 }
