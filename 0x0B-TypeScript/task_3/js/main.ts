@@ -5,7 +5,7 @@ import * as CRUD from './crud.js';
 
 
 const row: RowElement = {
-  firstName: 'Guillaume',
+  firstName: 'Guilaume',
   lastName: 'Salva',
 }
 
