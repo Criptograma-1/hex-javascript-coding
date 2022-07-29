@@ -19,7 +19,7 @@ const student2: Student = {
   location: "New York"
 }
 
-const studentsList = [student1, student2];
+const studentsList: Array<Student> = [student1, student2];
 const table = studentsList.map((student) => {
   return `
     <tr>
