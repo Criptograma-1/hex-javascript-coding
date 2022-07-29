@@ -2,7 +2,7 @@ export const cpp: Subjects.Cpp = new Subjects.Cpp();
 export const java: Subjects.Java = new Subjects.Java();
 export const react: Subjects.React = new Subjects.React();
 
-export const cTeacher: Subjects.TeacherInterface = {
+export const cTeacher: Subjects.Teacher = {
 	firstName: 'Um',
 	lastName: 'Professor',
 	experienceTeachingC: 10,
