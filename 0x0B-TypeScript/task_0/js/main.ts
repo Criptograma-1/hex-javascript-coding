@@ -20,11 +20,18 @@ const student2: Student = {
 }
 
 const studentsList: Array<Student> = [student1, student2];
-const table: string = studentsList.map((student) => {
-  return `
-    <tr>
-    <td>${student.firstName}</td>
-    <td>${student.location}</td>
-    </tr>
-  `;
-}).join('');
+
+const table: HTMLTableElement = document.createElement('table');
+
+studentsList.forEach((student) => {
+  let row: HTMLTableRowElement = table.insertRow();
+  for (let [key, value] of (<any>Object).entries(student)) {
+    if (key === 'firstName' || key === 'location'){
+      let cell: HTMLTableCellElement = row.insertCell();
+      let text = document.createTextNode(value);
+      cell.appendChild(text);
+    }
+  }
+})
+
+document.body.appendChild(table);
