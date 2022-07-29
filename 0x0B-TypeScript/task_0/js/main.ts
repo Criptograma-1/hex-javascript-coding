@@ -22,9 +22,11 @@ const student2: Student = {
 const studentsList: Array<Student> = [student1, student2];
 
 const table: HTMLTableElement = document.createElement('table');
+const tbody: HTMLTableSectionElement = table.createTBody();
+const thead: HTMLTableSectionElement = table.createTHead();
 
 studentsList.forEach((student) => {
-  let row: HTMLTableRowElement = table.insertRow();
+  let row: HTMLTableRowElement = tbody.insertRow();
   for (let [key, value] of (<any>Object).entries(student)) {
     if (key === 'firstName' || key === 'location'){
       let cell: HTMLTableCellElement = row.insertCell();
