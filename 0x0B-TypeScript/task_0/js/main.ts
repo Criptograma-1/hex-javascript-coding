@@ -20,7 +20,7 @@ const student2: Student = {
 }
 
 const studentsList: Array<Student> = [student1, student2];
-const table = studentsList.map((student) => {
+const table: string = studentsList.map((student) => {
   return `
     <tr>
     <td>${student.firstName}</td>
