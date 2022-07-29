@@ -1,10 +1,10 @@
 const cpp: Subjects.Cpp = new Subjects.Cpp();
 const java: Subjects.Java = new Subjects.Java();
-const react: Subjects.Java = new Subjects.React();
+const react: Subjects.React = new Subjects.React();
 
 let cTeacher = {
-	firstName: 'Pablo',
-	lastName: 'Escobar',
+	firstName: 'Um',
+	lastName: 'Professor',
 	experienceTeachingC: 10,
 };
 
