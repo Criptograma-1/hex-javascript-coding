@@ -24,11 +24,7 @@ const table = studentsList.map((student) => {
   return `
     <tr>
     <td>${student.firstName}</td>
-    <td>${student.lastName}</td>
-    <td>${student.age}</td>
     <td>${student.location}</td>
     </tr>
   `;
 }).join('');
-//Using Vanilla Javascript, render a table and for each elements in the array, append a new row to the table
-//Each row should contain the first name of the student and the location
