@@ -3,8 +3,8 @@ export const java: Subjects.Java = new Subjects.Java();
 export const react: Subjects.React = new Subjects.React();
 
 export const cTeacher: Subjects.TeacherInterface = {
-	firstName: 'Pablo',
-	lastName: 'Escobar',
+	firstName: 'Um',
+	lastName: 'Professor',
 	experienceTeachingC: 10,
 };
 
