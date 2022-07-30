@@ -1,17 +1,19 @@
-interface MajorCredits {
-	credits: number;
-	brand: 'brandA';
+type UUID = number;
+
+export interface MajorCredits {
+  credits: number;
+  brand: UUID;
 }
 
-interface MinorCredits {
-	credits: number;
-	brand: 'brandB';
+export interface MinorCredits {
+  credits: number;
+  brand: UUID;
 }
 
-function sumMajorCredits (subject1: number, subject2: number) : number {
-	return subject1 + subject2;
+export function sumMajorCredits (subject1: MajorCredits, subject2: MajorCredits): MajorCredits {
+  return { credits: subject1.credits + subject2.credits } as MajorCredits
 }
 
-function sumMinorCredits (subject1: number, subject2: number) : number {
-	return subject1 + subject2;
+export function sumMinorCredits (subject1: MinorCredits, subject2: MinorCredits): MinorCredits {
+  return { credits: subject1.credits + subject2.credits } as MinorCredits
 }

@@ -9,22 +9,19 @@ export const java: Subjects.Java = new Subjects.Java();
 export const react: Subjects.React = new Subjects.React();
 
 export const cTeacher: Subjects.Teacher = {
-	firstName: 'Um',
-	lastName: 'Professor',
-	experienceTeachingC: 10,
+    firstName: "Guillaume",
+    lastName: "Salva",
+    experienceTeachingC: 10,
 };
 
-console.log('C++');
+console.log("C++");
 cpp.setTeacher = cTeacher;
-console.log(cpp.getRequirements());
-console.log(cpp.getAvailableTeacher());
+console.log(cpp.getRequirements(), cpp.getAvailableTeacher());
 
-console.log('Java');
+console.log("Java");
 java.setTeacher = cTeacher;
-console.log(java.getRequirements());
-console.log(java.getAvailableTeacher());
+console.log(java.getRequirements(), java.getAvailableTeacher());
 
-console.log('React');
+console.log("React");
 react.setTeacher = cTeacher;
-console.log(react.getRequirements());
-console.log(react.getAvailableTeacher());
+console.log(react.getRequirements(), react.getAvailableTeacher());
