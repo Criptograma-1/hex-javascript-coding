@@ -1,6 +1,6 @@
-const cpp = new Subjects.Cpp();
-const java = new Subjects.Java();
-const react = new Subjects.React();
+const cpp: Subjects.Cpp = new Subjects.Cpp();
+const java: Subjects.Java = new Subjects.Java();
+const react: Subjects.React = new Subjects.React();
 
 let cTeacher = {
 	firstName: 'Guillaume',
