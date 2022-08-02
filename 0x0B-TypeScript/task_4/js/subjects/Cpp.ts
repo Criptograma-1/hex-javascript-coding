@@ -1,7 +1,4 @@
-/// <reference path="./Java.ts" />
-/// <reference path="./React.ts" />
 /// <reference path="./Subject.ts" />
-/// <reference path="./Teacher.ts" />
 namespace Subjects {
 	export interface Teacher {
 		experienceTeachingC?: number;
