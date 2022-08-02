@@ -12,7 +12,7 @@ namespace Subjects {
 			return `Here is the list of requirements for Cpp`;
 		}
 
-		getAvailableTeacher(): string {
+		public getAvailableTeacher(): string {
 			if (!this.teacher.experienceTeachingC) {
 				return `No available teacher`;
 			}
