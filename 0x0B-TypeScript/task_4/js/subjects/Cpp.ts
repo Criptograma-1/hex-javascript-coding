@@ -1,12 +1,14 @@
-///<reference path ='./Subject.ts' />
-///<reference path ='./Teacher.ts' />
+/// <reference path="./Java.ts" />
+/// <reference path="./React.ts" />
+/// <reference path="./Subject.ts" />
+/// <reference path="./Teacher.ts" />
 namespace Subjects {
-	export interface TeacherInterface {
+	export interface Teacher {
 		experienceTeachingC?: number;
 	}
 
 	export class Cpp extends Subject {
-		getRequirements(): string {
+		public getRequirements(): string {
 			return `Here is the list of requirements for Cpp`;
 		}
 

@@ -1,10 +1,13 @@
-///<reference path ='./Teacher.ts' />
+/// <reference path="./Cpp.ts" />
+/// <reference path="./Java.ts" />
+/// <reference path="./React.ts" />
+/// <reference path="./Teacher.ts" />
 
 namespace Subjects {
 	export class Subject {
-		teacher: TeacherInterface;
+		public teacher: Teacher;
 
-		setTeacher(teacher: TeacherInterface) {
+		public setTeacher(teacher: Teacher) {
 			this.teacher = teacher;
 		}
 	}
