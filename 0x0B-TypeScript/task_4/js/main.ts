@@ -1,8 +1,5 @@
-///<reference path ='./subjects/Cpp.ts' />
-///<reference path ='./subjects/Java.ts' />
-///<reference path ='./subjects/React.ts' />
-/// <reference path="./subjects/Teacher.ts" />
-/// <reference path="./subjects/Subject.ts" />
+///<reference path="./subjects/Teacher.ts" />
+
 const cpp: Subjects.Cpp = new Subjects.Cpp();
 const java: Subjects.Java = new Subjects.Java();
 const react: Subjects.React = new Subjects.React();
