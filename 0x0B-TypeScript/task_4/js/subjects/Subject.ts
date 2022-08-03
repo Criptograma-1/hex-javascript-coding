@@ -1,9 +1,9 @@
 /// <reference path="./Teacher.ts" />
 namespace Subjects {
 	export class Subject {
-		public teacher: Teacher;
+		public teacher: TeacherInterface;
 
-		public setTeacher(teacher: Teacher) {
+		public setTeacher(teacher: TeacherInterface) {
 			this.teacher = teacher;
 		}
 	}
