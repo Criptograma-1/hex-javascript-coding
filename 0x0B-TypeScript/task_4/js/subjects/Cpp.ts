@@ -1,6 +1,6 @@
 /// <reference path="./Subject.ts" />
 namespace Subjects {
-	export interface TeacherInterface {
+	export interface Teacher {
 		experienceTeachingC?: number;
 	}
 

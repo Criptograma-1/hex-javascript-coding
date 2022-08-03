@@ -3,11 +3,12 @@
 /// <reference path="./subjects/React.ts" />
 /// <reference path="./subjects/Subject.ts" />
 
+
 const cpp: Subjects.Cpp = new Subjects.Cpp();
 const java: Subjects.Java = new Subjects.Java();
 const react: Subjects.React = new Subjects.React();
 
-const cTeacher: Subjects.TeacherInterface = {
+const cTeacher: Subjects.Teacher = {
   firstName: 'Guillaume',
   lastName: 'Salva',
   experienceTeachingC: 10
