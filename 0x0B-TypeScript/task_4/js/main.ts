@@ -4,11 +4,11 @@
 /// <reference path="./subjects/Subject.ts" />
 
 
-const cpp: Subjects.Cpp = new Subjects.Cpp();
-const java: Subjects.Java = new Subjects.Java();
-const react: Subjects.React = new Subjects.React();
+export const cpp: Subjects.Cpp = new Subjects.Cpp();
+export const java: Subjects.Java = new Subjects.Java();
+export const react: Subjects.React = new Subjects.React();
 
-const cTeacher: Subjects.TeacherInterface = {
+export const cTeacher: Subjects.TeacherInterface = {
   firstName: 'Guillaume',
   lastName: 'Salva',
   experienceTeachingC: 10
